@@ -2,51 +2,96 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood! Restaurant "Le Délice des Sens"</title>
 
+    <link rel="stylesheet" href = "./css/normalize.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="./desktop.css" /> 
+
+    <!-- Bonus, une icone qui manquait pour le site -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon-32x32.png"> -->
 </head>
+
 <body>
 
-    Le délice des sens
+    <header>
+        <h1 class="logo">ohmyfood</h1>
+    </header>
+    
+    <main>
+        <div class="menu-header">
+            <h1 class="logo restaurant-title">Le délice des sens</h1>
+            <span class="heart"><i class="far fa-heart"></i></span>
+        </div>
 
-Entrées
-Tartare de thon
-Assaisonné au yuzu
-25€
+        <div class="menu-text">
+            <h3 class="menu-title">Entrées</h3>
+            <ul>
+                <li class="menu-item">
+                    Tartare de thon
+                    Assaisonné au yuzu
+                    25€
+                </li>
+                <li class="menu-item">
+                    Bouchée de homard croustillant 
+                    Et sa farandole de petits légumes
+                    35€
+                </li>
+                <li class="menu-item">
+                    Velouté de cèpes 
+                    Aux truffes
+                    20€
+                </li>
+            </ul>
 
-Bouchée de homard croustillant 
-Et sa farandole de petits légumes
-35€
+            <h3 class="menu-title">Plats</h3>
+            <ul>
+                <li class="menu-item">
+                    Poulet rôti aux herbes de Provence 
+                    Et sa crème de truffe
+                    40€
+                </li>
+                <li class="menu-item">
+                    Langouste rôtie 
+                    Et ses légumes de saison
+                    35€
+                </li>
+                <li class="menu-item">
+                    Côte de boeuf Angus 
+                    Et sa purée de panais
+                    44€
+                </li>
+            </ul>
 
-Velouté de cèpes 
-Aux truffes
-20€
-        
-Plats
-Poulet rôti aux herbes de Provence 
-Et sa crème de truffe
-40€
+            <h3 class="menu-title">Desserts</h3>
+            <ul>
+                <li class="menu-item">
+                    Farandole de desserts
+                    Du chef
+                    18€
+                </li>
+                <li class="menu-item">
+                    Crème brulée 
+                    Revisitée
+                    22€
+                </li>
+                <li class="menu-item">
+                    Tiramisu
+                    À la noisette
+                    23€
+                </li>
+            </ul>
 
-Langouste rôtie 
-Et ses légumes de saison
-35€
+        </div>
 
-Côte de boeuf Angus 
-Et sa purée de panais
-44€
-
-Desserts
-Farandole de desserts
-Du chef
-18€
-
-Crème brulée 
-Revisitée
-22€
-
-Tiramisu 
-À la noisette
-23€
+        <button class="btn">Commander</button>
+    </main>
 
     <footer>
         <span class="logo">ohmyfood</span>

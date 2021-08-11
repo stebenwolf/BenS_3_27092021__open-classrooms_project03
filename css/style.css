@@ -6,5 +6,17 @@ Couleurs :
 Primaire (violet) : #9356DC
 Secondaire (rose) : #FF79DA
 Tertiaire (vert) : #99E2D0
-
 */
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Shrikhand', cursive;
+}
