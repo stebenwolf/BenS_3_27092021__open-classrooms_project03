@@ -483,13 +483,6 @@ hr {
 }
 
 
-
-
-
-
-
-
-
 .menu-item:hover {
   cursor:pointer;
 }
@@ -497,8 +490,11 @@ hr {
 .menu-item--text {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem;
-  width: calc(100% - 1.5rem);
+  padding: 1rem;
+
+  flex: 1 1 100%;
+  min-width: 0;
+  
 }
 
 .menu-item:hover .menu-item--text {
@@ -506,41 +502,54 @@ hr {
 }
 
 .menu-item-title {
-  display: inline-block;
   width: 100%;
   font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  
   font-size: 1.1rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .menu-item-description {
-  display: inline-block;
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   
 }
 
-.menu-item:hover .menu-item-subtitle {
-  min-width: none;
+
+.menu-item .menu-item-description {
+  animation: ellipsisout 0.8s forwards;
+}
+
+@keyframes ellipsisout {
+  to {width: calc(100%); }
+  from {
+    width: calc(100% - 40px);    
+  }
+}
+
+
+.menu-item:hover .menu-item-description {
+  animation: ellipsisin 0.8s forwards;
+}
+
+@keyframes ellipsisin {
+  from {width: calc(100%); }
+  to {
+    width: calc(100% - 40px);    
+  }
 }
 
 .menu-item-subtitle {
-  display: inline-block;
-  width: calc(100%);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   color: #7e7e7e;
   font-size: 0.9rem;
-  flex-shrink: 2;
 }
 
 .menu-item-price {
   float: left;
   display: flex;
-  width: calc(100%);
+  width: calc(30%);
   height: 100%;
   align-items: flex-end;
   font-weight: bold;
@@ -553,8 +562,8 @@ hr {
 .menu-item--check {
   display: flex;
   
-  width: calc(80px - 2rem);
-  padding: 1rem 1.5rem 1rem 0;
+  width: calc(70px - 1.5rem);
+  padding: 1rem 1rem 1rem 0;
   justify-content: center;
   align-items: center;
   color: white;
