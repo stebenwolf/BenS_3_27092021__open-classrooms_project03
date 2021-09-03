@@ -20,83 +20,167 @@
 
 <body>
 
-    <header>
+    <header class="shadow">
         <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-            <h1 class="logo">ohmyfood</h1>
-        </a>
+            <h1 class="logo">
+                <span class="header--arrow ">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                <span class="title header--title">
+                    ohmyfood
+                </span>
+            </h1>
+        </a>        
     </header>
 
-    <main>
+    <main class="restaurant-page bg-light-grey">
+        <div class="restaurant-img">
+            <picture>
+                <img src="./requirements/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant à la Française">
+            </picture>
+        </div>
         <div class="menu-header">
-            <h1 class="logo restaurant-title">La palette du goût</h1>
-            <span class="heart"><i class="far fa-heart"></i></span>
+            <h1 class="title restaurant-title">La palette du goût</h1>
+            <div class="heart restaurant-heart">
+                <i class="default far fa-heart"></i>
+                <i class="heart-colored fas fa-heart"></i>
+            </div>
         </div>
 
-        <div class="menu-text">
+        <section class="menu-text">
             <h3 class="menu-title">Entrées</h3>
             <hr>
-            <ul>
-                <li class="menu-item">
-                    Fricassée d'escargot
-                    Au piment d'Espelette
-                    25€
-                </li>
-                <li class="menu-item">
-                    Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
-35€
-                </li>
-                <li class="menu-item">
-                    Oeuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€
-                </li>
-            </ul>
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Fricassée d'escargot</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Au piment d'Espelette</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">25&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Foie gras de canard mi-cuit</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Et ses copeaux de truffe noire</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">35&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
 
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Oeuf au plat</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Assaisonné à la truffe sur lit de caviar</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">20&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-text">
             <h3 class="menu-title">Plats</h3>
             <hr>
-            <ul>
-                <li class="menu-item">
-                    Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
-                </li>
-                <li class="menu-item">
-                    Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais
-35€
-                </li>
-                <li class="menu-item">
-                    Filet de turbot
-Aux agrumes
-44€
-                </li>
-            </ul>
 
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Filet de boeuf aux herbes</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Accompagné de sa ribambelle de légumes</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">40&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Parmentier de queue de boeuf</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">À la truffe noire sur sa purée de panais</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">35&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Filet de turbot</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Aux agrumes</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">44&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-text">
             <h3 class="menu-title">Desserts</h3>
             <hr>
-            <ul>
-                <li class="menu-item">
-                    Paris-Brest
-Revisité
-18€
-                </li>
-                <li class="menu-item">
-                    Macaron au chocolat d'exception 
-Et glace à la vanille de Madagascar
-22€
-                </li>
-                <li class="menu-item">
-                    Mousse au chocolat 
-Au piment d'Espelette et à la truffe noire
-23€  
-                </li>
-            </ul>
 
-        </div>
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Paris-Brest</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Revisité</span>    
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">18&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Macaron au chocolat d'exception</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Et glace à la vanille de Madagascar</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">22&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
 
-        <button class="btn">Commander</button>
+            <div class="menu-item shadow">
+                <div class="menu-item--text">
+                    <div class="menu-item-title">Mousse au chocolat</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Au piment d'Espelette et à la truffe noire</span>
+                    </div>
+                </div>
+                <div class="menu-item--check">
+                    <span class="menu-item-price">23&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#checkout">
+            <span class="btn btn-thin">Commander</span>
+        </a>
     </main>
 
     <footer>
