@@ -28,7 +28,8 @@ nav > *,
 }
 .btn,
 .menu-title,
-.menu-item-price {
+.menu-item-price,
+.description p {
     font-size: 1rem;
 }
 .menu-item-title {
@@ -51,7 +52,8 @@ nav > *,
     font-weight: 100;
 }
 .menu-title,
-.restaurant_location {
+.restaurant_location,
+.description p {
     font-weight: 300;
 }
 .step {

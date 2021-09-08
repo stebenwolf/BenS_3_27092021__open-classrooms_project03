@@ -1,0 +1,94 @@
+/* Display */
+
+header,
+.header--arrow,
+.logo,
+.location,
+.description,
+.btn,
+.heart,
+.fonctionnement,
+.card_description,
+.menu-item,
+.menu-item--text,
+.menu-item-price,
+.menu-item--check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.step {  
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+
+/* Grow/Shrink/... */ 
+.menu-item--text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+
+/* Direction */
+header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+
+/* Wrap/Nowrap */
+header,
+.menu-item {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.description,
+.fonctionnement,
+.menu-item--text {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Justify / Align */
+
+.header--arrow {
+    -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.logo,
+.location,
+.description,
+.btn,
+.fonctionnement,
+.step,
+.menu-item--check {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+.header--arrow,
+.heart,
+.fonctionnement,
+.step,
+.menu-item--check {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu-item-price {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}

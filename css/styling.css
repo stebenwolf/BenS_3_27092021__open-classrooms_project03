@@ -3,15 +3,6 @@ a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   max-width: calc(100%);
   position: fixed;
   z-index: 10;
@@ -38,25 +29,7 @@ header {
 
 .header--arrow {
   width: calc(27vw - 2rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   padding: 0 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo, .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .location {
@@ -71,24 +44,11 @@ header {
 
 .description {
   padding: 1rem 3rem 3rem 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
 }
 
 .description h2 {
   margin-bottom: 0rem;
-}
-
-.description p {
-  font-size: 1rem;
-  font-weight: 300;
 }
 
 .btn {
@@ -98,13 +58,7 @@ header {
   margin: 1rem 0rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .btn-thin {
@@ -137,14 +91,7 @@ hr {
   position: absolute;
   right: -0.50rem;
   bottom: 1.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 10%;
-  
   padding: 0 1.5rem;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #fff;
@@ -196,17 +143,6 @@ hr {
 
 .fonctionnement {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-bottom: 2.5rem;
 }
 
@@ -234,16 +170,6 @@ hr {
   height: 25px;
   width: calc(25px - 0.05rem);
   border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  
   margin-left: -0.9rem;
   margin-right: 0.9rem;
 }
@@ -313,9 +239,6 @@ nav a:nth-child(2) i {
 }
 
 .card_description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: calc(75px - 0rem);
 }
 
@@ -443,11 +366,6 @@ nav a:nth-child(2) i {
 .menu-item {
   border-radius: 15px;
   margin: 0.75rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   overflow: hidden;
   width: calc(100%);
   -webkit-animation-duration: 1s;
@@ -482,15 +400,7 @@ nav a:nth-child(2) i {
 }
 
 .menu-item--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 1rem 0.5rem 1rem 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
   min-width: 0;
 }
 
@@ -556,33 +466,16 @@ nav a:nth-child(2) i {
 }
 
 .menu-item-price {
-  float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: calc(20%);
   height: 100%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  float: left;
   position: relative;
   left: -110%;
-  color: black;
-  
 }
 
 .menu-item--check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: calc(70px - 1.5rem);
   padding: 1rem 1rem 1rem 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   animation: slide-out 0.4s forwards;
   -webkit-animation: slide-out 0.4s forwards;
 }
