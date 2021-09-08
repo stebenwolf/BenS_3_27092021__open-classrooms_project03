@@ -1,0 +1,91 @@
+/* Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+
+@charset "UTF-8";
+
+html {
+    font-size: $baseFontSize;
+    font-family: $mainFont;
+}
+
+.title {
+    font-family: $titleFont;
+}
+
+/* FONT SIZE */
+nav a:nth-child(2) i {
+    font-size: 0.6rem;
+}
+.step,
+.nouveau, nav a:nth-child(1) i {
+    font-size: 0.8rem;
+} 
+nav > *,
+.menu-item-subtitle {
+    font-size: 0.9rem;
+}
+.btn,
+.menu-title,
+.menu-item-price {
+    font-size: 1rem;
+}
+.menu-item-title {
+    font-size: 1.1rem;
+}
+.menu-item--check {
+    font-size: 1.2rem;
+}
+.header--arrow {
+    font-size: 1.5rem;
+}
+.restaurant-title,
+.heart {
+    font-size: 1.7rem;
+}
+
+
+/* FONT WEIGHT */
+.heart {
+    font-weight: 100;
+}
+.menu-title,
+.restaurant_location {
+    font-weight: 300;
+}
+.step {
+    font-weight: 400;
+}
+.btn {
+    font-weight: 500;
+}
+.location,
+.item,
+.nouveau {
+    font-weight: 600;
+}
+.restaurant_name,
+.menu-item-title,
+.menu-item-price {
+    font-weight: bold;
+}
+
+/* LETTER SPACING */
+.btn {
+    letter-spacing: 0.01rem;
+}
+
+/* TEXT TRANSFORM */
+.menu-title {
+    text-transform: uppercase;
+}
+
+/* LINE HEIGHT */
+.card_text {
+    line-height: 1.5rem;
+}
+nav > *,
+.menu-item-title {
+    line-height: 1.8rem;
+}

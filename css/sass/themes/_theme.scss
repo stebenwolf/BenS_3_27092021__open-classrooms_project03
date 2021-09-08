@@ -1,0 +1,103 @@
+/* Couleurs :
+Primaire (violet) : #9356DC
+Secondaire (rose) : #FF79DA
+Tertiaire (vert) : #99E2D0
+*/
+
+
+
+/* -------------------------------------*/
+/* -------- COLORS -------------------- */
+/* -------------------------------------*/
+
+/* background-colors */
+.white-bg,
+.card,
+.menu-item {
+    background-color: white;
+}
+
+.bg-light-grey,
+.item-default,
+#restaurants,
+.description,
+.menu-header {
+    background-color: #f6f6f6;
+}
+
+hr {
+    background-color: $tertiaryColor;
+}
+.nouveau {
+    background-color: $tertiaryColor;
+}
+.menu-item--check {
+    background-color: $tertiaryColor;
+  }
+
+.step {
+    background-color: $primaryColor;
+}
+
+.location {
+    background-color: #eaeaea;
+}
+  
+.item-default:hover, .item-light {
+    background-color: #f5edff;
+}
+  
+footer {
+    background-color: #353535;
+}
+
+/* colors */
+a {
+    color: black;
+}
+
+hr {
+    border: 1px solid $tertiaryColor;
+}
+hr {
+    color: $tertiaryColor;
+}
+  
+.nouveau {
+    color: #008766;
+}
+  
+.step,
+.btn,
+footer *,
+.menu-item--check {
+    color: white;
+}
+  
+.item-default i,
+.menu-item-subtitle,
+.menu-title {
+    color: #7e7e7e;
+}
+  
+.item-light i {
+    color: $primaryColor;
+}
+  
+.location, .description p {
+    color: #353535;
+}
+
+/* ----- for testing purpose ---- */
+.green {
+    background-color: greenyellow;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: cyan;
+}

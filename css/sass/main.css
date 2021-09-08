@@ -1,0 +1,208 @@
+/* COLORS */
+/* Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Shrikhand", cursive;
+}
+
+/* FONT SIZE */
+nav a:nth-child(2) i {
+  font-size: 0.6rem;
+}
+
+.step,
+.nouveau, nav a:nth-child(1) i {
+  font-size: 0.8rem;
+}
+
+nav > *,
+.menu-item-subtitle {
+  font-size: 0.9rem;
+}
+
+.btn,
+.menu-title,
+.menu-item-price {
+  font-size: 1rem;
+}
+
+.menu-item-title {
+  font-size: 1.1rem;
+}
+
+.menu-item--check {
+  font-size: 1.2rem;
+}
+
+.header--arrow {
+  font-size: 1.5rem;
+}
+
+.restaurant-title,
+.heart {
+  font-size: 1.7rem;
+}
+
+/* FONT WEIGHT */
+.heart {
+  font-weight: 100;
+}
+
+.menu-title,
+.restaurant_location {
+  font-weight: 300;
+}
+
+.step {
+  font-weight: 400;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.location,
+.item,
+.nouveau {
+  font-weight: 600;
+}
+
+.restaurant_name,
+.menu-item-title,
+.menu-item-price {
+  font-weight: bold;
+}
+
+/* LETTER SPACING */
+.btn {
+  letter-spacing: 0.01rem;
+}
+
+/* TEXT TRANSFORM */
+.menu-title {
+  text-transform: uppercase;
+}
+
+/* LINE HEIGHT */
+.card_text {
+  line-height: 1.5rem;
+}
+
+nav > *,
+.menu-item-title {
+  line-height: 1.8rem;
+}
+
+/* Couleurs :
+Primaire (violet) : #9356DC
+Secondaire (rose) : #FF79DA
+Tertiaire (vert) : #99E2D0
+*/
+/* -------------------------------------*/
+/* -------- COLORS -------------------- */
+/* -------------------------------------*/
+/* background-colors */
+.white-bg,
+.card,
+.menu-item {
+  background-color: white;
+}
+
+.bg-light-grey,
+.item-default,
+#restaurants,
+.description,
+.menu-header {
+  background-color: #f6f6f6;
+}
+
+hr {
+  background-color: #99E2D0;
+}
+
+.nouveau {
+  background-color: #99E2D0;
+}
+
+.menu-item--check {
+  background-color: #99E2D0;
+}
+
+.step {
+  background-color: #9356DC;
+}
+
+.location {
+  background-color: #eaeaea;
+}
+
+.item-default:hover, .item-light {
+  background-color: #f5edff;
+}
+
+footer {
+  background-color: #353535;
+}
+
+/* colors */
+a {
+  color: black;
+}
+
+hr {
+  border: 1px solid #99E2D0;
+}
+
+hr {
+  color: #99E2D0;
+}
+
+.nouveau {
+  color: #008766;
+}
+
+.step,
+.btn,
+footer *,
+.menu-item--check {
+  color: white;
+}
+
+.item-default i,
+.menu-item-subtitle,
+.menu-title {
+  color: #7e7e7e;
+}
+
+.item-light i {
+  color: #9356DC;
+}
+
+.location, .description p {
+  color: #353535;
+}
+
+/* ----- for testing purpose ---- */
+.green {
+  background-color: greenyellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: cyan;
+}
+/*# sourceMappingURL=main.css.map */
