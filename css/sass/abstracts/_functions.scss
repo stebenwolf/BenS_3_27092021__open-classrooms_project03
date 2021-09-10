@@ -1,0 +1,29 @@
+@function pow($base, $exponent) {
+    $result: 1;
+    @for $_ from 1 through $exponent {
+      $result: $result * $base;
+    }
+    @return $result;
+  }
+  
+  .sidebar {
+    float: left;
+    margin-left: pow(4, 3) * 1px;
+  }
+
+
+@function menu_duration($children, $basetime_item) {
+    $result: 1;
+    @for $_ from 1 through $children {
+        $result: ($children - 1) * $basetime_item;
+    }
+    @return $result;
+}
+
+@function menu_delay($nth_menu, $basetime_menu) {
+    $result: 1;
+    @for $_ from 1 through $nth_menu {
+        $result: @menu_duration($children, $basetime_item) + $basetime_menu;
+    }
+    @return $result;
+}

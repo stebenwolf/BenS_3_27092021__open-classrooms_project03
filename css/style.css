@@ -17,8 +17,17 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
 html {
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -31,21 +40,19 @@ html {
 
 header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  max-width: calc(100%);
-  
+  width:100%;
   position: fixed;
   z-index: 10;
   background-color: white;
   top: 0px;
   z-index: 5;
+  justify-content: center;
 }
 
 .header--title {
-  display: inline-block;
-  width: 73vw;
-  padding-left: calc(50vw - 27vw - 90px); /* Permet de centrer le titre peu importe la largeur de l'écran. ([100vw(largeur page) - 180px(largeur du titre)]/2 - espace arrow) */
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .shadow {
@@ -58,14 +65,12 @@ header {
 }
 
 .header--arrow {
-  width: calc(27vw - 2rem);
-  display: flex;
-  justify-content: left;
   padding: 0 1rem;
   font-size: 1.5rem;
-  align-items: center;
-
+  position: absolute;
+  left: 0;
 }
+
 
 .logo, .location {
   display: flex;
@@ -92,10 +97,16 @@ header {
 }
 
 .description h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 0rem;
 }
 
 .description p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   font-size: 1rem;
   font-weight: 300;
 }
@@ -231,6 +242,7 @@ hr {
 }
 
 footer {
+  width: 100%;
   padding: 1rem;
 }
 
