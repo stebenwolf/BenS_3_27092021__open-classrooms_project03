@@ -12,7 +12,8 @@
   }
 
 
-@function menu_duration($children, $basetime_item) {
+
+/* @function menu_duration($children, $basetime_item) {
     $result: 1;
     @for $_ from 1 through $children {
         $result: ($children - 1) * $basetime_item;
@@ -26,4 +27,15 @@
         $result: @menu_duration($children, $basetime_item) + $basetime_menu;
     }
     @return $result;
+} */
+
+/* 
+.menu-text:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
+
+.menu-text:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+} */
