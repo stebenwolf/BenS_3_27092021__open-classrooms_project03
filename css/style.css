@@ -1,26 +1,3 @@
-/* Polices
-Logo et titres: Shrikhand
-Texte: Roboto
-
-Couleurs :
-Primaire (violet) :#9356DC
-Secondaire (rose) : #FF79DA
-*/
-
-
-.middle {
-  position:absolute;
-  background-color: #008766;
-  top: 0;
-  margin: 0;
-  width: 0px;
-  height: 600vh;
-  border: 2px solid white;
-  z-index: 20;
-  display: flex;
-  float: left;
-}
-
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -251,8 +228,8 @@ hr {
 }
 
 footer {
-  width: 100%;
-  padding: 1rem;
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
 }
 
 #restaurants {
@@ -429,30 +406,6 @@ hr {
   top: 30px;
   bottom: 0px;
   right: 10px;
-}
-
-@keyframes colorfill {
-  0% { background-image: -moz-linear-gradient(top, transparent 25px,#9356DC 0px, #FF79DA 100%); }
-  5% { background-image: -moz-linear-gradient(top, transparent 23px,#9356DC 0px, #FF79DA 100%); }
-  10% { background-image: -moz-linear-gradient(top, transparent 22px,#9356DC 0px, #FF79DA 100%); }
-  15% { background-image: -moz-linear-gradient(top, transparent 21px,#9356DC 0px, #FF79DA 100%); }
-  20% { background-image: -moz-linear-gradient(top, transparent 20px,#9356DC 0px, #FF79DA 100%); }
-  25% { background-image: -moz-linear-gradient(top, transparent 18px,#9356DC 0px, #FF79DA 100%); }
-  30% { background-image: -moz-linear-gradient(top, transparent 17px,#9356DC 0px, #FF79DA 100%); }
-  35% { background-image: -moz-linear-gradient(top, transparent 16px,#9356DC 0px, #FF79DA 100%); }
-  40% { background-image: -moz-linear-gradient(top, transparent 15px,#9356DC 0px, #FF79DA 100%); }
-  45% { background-image: -moz-linear-gradient(top, transparent 13px,#9356DC 0px, #FF79DA 100%); }
-  50% { background-image: -moz-linear-gradient(top, transparent 12px,#9356DC 0px, #FF79DA 100%); }
-  55% { background-image: -moz-linear-gradient(top, transparent 11px,#9356DC 0px, #FF79DA 100%); }
-  60% { background-image: -moz-linear-gradient(top, transparent 10px,#9356DC 0px, #FF79DA 100%); }
-  65% { background-image: -moz-linear-gradient(top, transparent 8px,#9356DC 0px, #FF79DA 100%); }
-  70% { background-image: -moz-linear-gradient(top, transparent 7px,#9356DC 0px, #FF79DA 100%); }
-  75% { background-image: -moz-linear-gradient(top, transparent 6px,#9356DC 0px, #FF79DA 100%); }
-  80% { background-image: -moz-linear-gradient(top, transparent 5px,#9356DC 0px, #FF79DA 100%); }
-  85% { background-image: -moz-linear-gradient(top, transparent 4px,#9356DC 0px, #FF79DA 100%); }
-  90% { background-image: -moz-linear-gradient(top, transparent 2px,#9356DC 0px, #FF79DA 100%); }
-  95% { background-image: -moz-linear-gradient(top, transparent 1px,#9356DC 0px, #FF79DA 100%); }
-  100% { background-image: -moz-linear-gradient(top, transparent 0px,#9356DC 0px, #FF79DA 100%); }
 }
 
 .menu-text {
@@ -705,6 +658,31 @@ hr {
 .blue {
   background-color: cyan;
 }
+/* Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+
+Couleurs :
+Primaire (violet) :#9356DC
+Secondaire (rose) : #FF79DA
+*/
+
+
+.middle {
+  position:absolute;
+  background-color: #008766;
+  top: 0;
+  margin: 0;
+  width: 0px;
+  height: 600vh;
+  border: 2px solid white;
+  z-index: 20;
+  display: flex;
+  float: left;
+}
+
+
+
 
 
 
@@ -919,8 +897,6 @@ hr {
   animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
 }
 
-
-
 @-webkit-keyframes upndown {
   0% { transform:translateY(0px);}
   50% {transform: translateY(-15px);}
@@ -965,27 +941,26 @@ hr {
   
 }
 
-/* .btn:hover, .btn-thin:hover {
-  border-radius: 5rem;
-  border: none;
-  padding: 0.9rem 0.75rem;
-  margin: 1rem 0rem;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.01rem;
-  background: linear-gradient(#FF79DA, #9356DC);
-  display: flex;
-  width: 100%;
-  justify-content: center;
+@keyframes colorfill {
+  0% { background-image: -moz-linear-gradient(top, transparent 25px,#9356DC 0px, #FF79DA 100%); }
+  5% { background-image: -moz-linear-gradient(top, transparent 23px,#9356DC 0px, #FF79DA 100%); }
+  10% { background-image: -moz-linear-gradient(top, transparent 22px,#9356DC 0px, #FF79DA 100%); }
+  15% { background-image: -moz-linear-gradient(top, transparent 21px,#9356DC 0px, #FF79DA 100%); }
+  20% { background-image: -moz-linear-gradient(top, transparent 20px,#9356DC 0px, #FF79DA 100%); }
+  25% { background-image: -moz-linear-gradient(top, transparent 18px,#9356DC 0px, #FF79DA 100%); }
+  30% { background-image: -moz-linear-gradient(top, transparent 17px,#9356DC 0px, #FF79DA 100%); }
+  35% { background-image: -moz-linear-gradient(top, transparent 16px,#9356DC 0px, #FF79DA 100%); }
+  40% { background-image: -moz-linear-gradient(top, transparent 15px,#9356DC 0px, #FF79DA 100%); }
+  45% { background-image: -moz-linear-gradient(top, transparent 13px,#9356DC 0px, #FF79DA 100%); }
+  50% { background-image: -moz-linear-gradient(top, transparent 12px,#9356DC 0px, #FF79DA 100%); }
+  55% { background-image: -moz-linear-gradient(top, transparent 11px,#9356DC 0px, #FF79DA 100%); }
+  60% { background-image: -moz-linear-gradient(top, transparent 10px,#9356DC 0px, #FF79DA 100%); }
+  65% { background-image: -moz-linear-gradient(top, transparent 8px,#9356DC 0px, #FF79DA 100%); }
+  70% { background-image: -moz-linear-gradient(top, transparent 7px,#9356DC 0px, #FF79DA 100%); }
+  75% { background-image: -moz-linear-gradient(top, transparent 6px,#9356DC 0px, #FF79DA 100%); }
+  80% { background-image: -moz-linear-gradient(top, transparent 5px,#9356DC 0px, #FF79DA 100%); }
+  85% { background-image: -moz-linear-gradient(top, transparent 4px,#9356DC 0px, #FF79DA 100%); }
+  90% { background-image: -moz-linear-gradient(top, transparent 2px,#9356DC 0px, #FF79DA 100%); }
+  95% { background-image: -moz-linear-gradient(top, transparent 1px,#9356DC 0px, #FF79DA 100%); }
+  100% { background-image: -moz-linear-gradient(top, transparent 0px,#9356DC 0px, #FF79DA 100%); }
 }
-
-.btn-thin {
-  margin: 2.5rem auto;
-  width: 50%;
-
-  opacity: 0;
-  animation-name: fadein;
-  animation-delay: 3.8s;
-  animation-duration: 1.8s;
-  animation-fill-mode: forwards;
-} */
