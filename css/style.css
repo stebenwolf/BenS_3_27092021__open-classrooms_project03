@@ -142,11 +142,11 @@ header {
   margin: 2.5rem auto;
   width: 50%;
 
-  opacity: 0;
+  /* opacity: 1;
   animation-name: fadein;
   animation-delay: 3.8s;
   animation-duration: 1.8s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 hr {
@@ -761,7 +761,7 @@ hr {
   background: #353535;
   z-index: 10;
   opacity: 1;
-  animation: fadeout 0.45s linear 3.5s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+  animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
   /*transition: 15s; */
 }
 
@@ -920,3 +920,52 @@ hr {
   0% {transform: translateY(-5000px);}
   100% {transform: translateY(0);}
 }
+
+.btn, .btn-thin {
+  animation: shadows-away 0.2s ease-in 0s 1 normal forwards;
+}
+
+.btn:hover, .btn-thin:hover {
+  opacity: 1;
+  animation: shadows 0.2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes shadows {
+  to {filter: brightness(110%);
+    box-shadow: 0px 5px 5px #7e7e7e;}    
+}
+
+@keyframes shadows-away {
+  from {
+    filter: brightness(110%);
+    box-shadow: 0px 5px 5px #7e7e7e;
+  }
+  to {filter: brightness(100%);
+  box-shadow: none;}
+  
+}
+
+/* .btn:hover, .btn-thin:hover {
+  border-radius: 5rem;
+  border: none;
+  padding: 0.9rem 0.75rem;
+  margin: 1rem 0rem;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-thin {
+  margin: 2.5rem auto;
+  width: 50%;
+
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 3.8s;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+} */
