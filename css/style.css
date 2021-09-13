@@ -187,15 +187,11 @@ hr {
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
-  animation: pop 0.3s linear 1;
-}
-
-.heart-colored:active {
-  animation: pop 0.3s linear 1;
+  animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
 }
 
 @keyframes pop{
-  50%  {transform: scale(1.2);}
+  50%  {transform: scale(1.4) translateX(9px);}
 }
 
 .heart-colored {
@@ -433,6 +429,30 @@ hr {
   top: 30px;
   bottom: 0px;
   right: 10px;
+}
+
+@keyframes colorfill {
+  0% { background-image: -moz-linear-gradient(top, transparent 25px,#9356DC 0px, #FF79DA 100%); }
+  5% { background-image: -moz-linear-gradient(top, transparent 23px,#9356DC 0px, #FF79DA 100%); }
+  10% { background-image: -moz-linear-gradient(top, transparent 22px,#9356DC 0px, #FF79DA 100%); }
+  15% { background-image: -moz-linear-gradient(top, transparent 21px,#9356DC 0px, #FF79DA 100%); }
+  20% { background-image: -moz-linear-gradient(top, transparent 20px,#9356DC 0px, #FF79DA 100%); }
+  25% { background-image: -moz-linear-gradient(top, transparent 18px,#9356DC 0px, #FF79DA 100%); }
+  30% { background-image: -moz-linear-gradient(top, transparent 17px,#9356DC 0px, #FF79DA 100%); }
+  35% { background-image: -moz-linear-gradient(top, transparent 16px,#9356DC 0px, #FF79DA 100%); }
+  40% { background-image: -moz-linear-gradient(top, transparent 15px,#9356DC 0px, #FF79DA 100%); }
+  45% { background-image: -moz-linear-gradient(top, transparent 13px,#9356DC 0px, #FF79DA 100%); }
+  50% { background-image: -moz-linear-gradient(top, transparent 12px,#9356DC 0px, #FF79DA 100%); }
+  55% { background-image: -moz-linear-gradient(top, transparent 11px,#9356DC 0px, #FF79DA 100%); }
+  60% { background-image: -moz-linear-gradient(top, transparent 10px,#9356DC 0px, #FF79DA 100%); }
+  65% { background-image: -moz-linear-gradient(top, transparent 8px,#9356DC 0px, #FF79DA 100%); }
+  70% { background-image: -moz-linear-gradient(top, transparent 7px,#9356DC 0px, #FF79DA 100%); }
+  75% { background-image: -moz-linear-gradient(top, transparent 6px,#9356DC 0px, #FF79DA 100%); }
+  80% { background-image: -moz-linear-gradient(top, transparent 5px,#9356DC 0px, #FF79DA 100%); }
+  85% { background-image: -moz-linear-gradient(top, transparent 4px,#9356DC 0px, #FF79DA 100%); }
+  90% { background-image: -moz-linear-gradient(top, transparent 2px,#9356DC 0px, #FF79DA 100%); }
+  95% { background-image: -moz-linear-gradient(top, transparent 1px,#9356DC 0px, #FF79DA 100%); }
+  100% { background-image: -moz-linear-gradient(top, transparent 0px,#9356DC 0px, #FF79DA 100%); }
 }
 
 .menu-text {
