@@ -1,0 +1,36 @@
+// -------------------------------------------- 
+// HEADER
+// --------------------------------------------
+
+header {
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header--title {
+    width: 100%;
+  }
+
+  .arrow--index {
+    display: none;
+  }
+  
+  .header--arrow {
+    padding: 0 1rem;
+    position: absolute;
+  left: 0;
+  }
+
+
+  .logo {
+    max-width: 800px;
+    width: 100vw;
+    padding: 0rem;
+    z-index: 10;
+    margin: 1.35rem auto;
+  }

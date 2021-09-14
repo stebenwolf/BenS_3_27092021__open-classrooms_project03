@@ -1,36 +1,354 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
 /* COLORS */
-.sidebar {
-  float: left;
-  margin-left: 64px;
-}
-
-/* @function menu_duration($children, $basetime_item) {
-    $result: 1;
-    @for $_ from 1 through $children {
-        $result: ($children - 1) * $basetime_item;
-    }
-    @return $result;
-}
-
-@function menu_delay($nth_menu, $basetime_menu) {
-    $result: 1;
-    @for $_ from 1 through $nth_menu {
-        $result: @menu_duration($children, $basetime_item) + $basetime_menu;
-    }
-    @return $result;
-} */
-/* 
-.menu-text:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-.menu-text:nth-of-type(2) {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-} */
 a {
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Polices
@@ -54,6 +372,10 @@ nav a:nth-child(2) i {
 .step,
 .nouveau, nav a:nth-child(1) i {
   font-size: 0.8rem;
+}
+
+.restaurant-title {
+  font-size: 0.85rem;
 }
 
 nav > *,
@@ -80,9 +402,12 @@ nav > *,
   font-size: 1.5rem;
 }
 
-.restaurant-title,
 .heart {
   font-size: 1.7rem;
+}
+
+.self-made-loader {
+  font-size: 100px;
 }
 
 /* FONT WEIGHT */
@@ -147,13 +472,6 @@ nav > *,
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-}
-
-.btn-thin {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-  -webkit-animation-duration: 1.8s;
-  animation-duration: 1.8s;
 }
 
 .menu-text:nth-of-type(1) {
@@ -221,25 +539,6 @@ nav > *,
   animation-delay: 2.5s;
 }
 
-.heart-colored:active {
-  -webkit-animation: pop 0.3s linear 1;
-  animation: pop 0.3s linear 1;
-}
-
-@-webkit-keyframes pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-@keyframes pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -264,20 +563,20 @@ nav > *,
 }
 
 @-webkit-keyframes ellipsisout {
-  to {
-    width: calc(100%);
-  }
   from {
     width: calc(100% - 40px);
+  }
+  to {
+    width: calc(100%);
   }
 }
 
 @keyframes ellipsisout {
-  to {
-    width: calc(100%);
-  }
   from {
     width: calc(100% - 40px);
+  }
+  to {
+    width: calc(100%);
   }
 }
 
@@ -373,9 +672,654 @@ nav > *,
   }
 }
 
+.page_covering {
+  -webkit-animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+          animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+  /*transition: 15s; */
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes disappear {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disappear {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes upndown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes upndown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes dropdown {
+  0% {
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.btn, .btn-thin {
+  opacity: 1;
+  -webkit-animation: shadows-away 0.2s ease-in 0s 1 normal forwards;
+          animation: shadows-away 0.2s ease-in 0s 1 normal forwards;
+}
+
+.btn:hover, .btn-thin:hover {
+  opacity: 1;
+  -webkit-animation: shadows 0.2s ease-in 0s 1 normal forwards;
+          animation: shadows 0.2s ease-in 0s 1 normal forwards;
+}
+
+@-webkit-keyframes shadows {
+  to {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-box-shadow: 0px 5px 5px #7e7e7e;
+            box-shadow: 0px 5px 5px #7e7e7e;
+  }
+}
+
+@keyframes shadows {
+  to {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-box-shadow: 0px 5px 5px #7e7e7e;
+            box-shadow: 0px 5px 5px #7e7e7e;
+  }
+}
+
+@-webkit-keyframes shadows-away {
+  from {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-box-shadow: 0px 5px 5px #7e7e7e;
+            box-shadow: 0px 5px 5px #7e7e7e;
+  }
+  to {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes shadows-away {
+  from {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-box-shadow: 0px 5px 5px #7e7e7e;
+            box-shadow: 0px 5px 5px #7e7e7e;
+  }
+  to {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+/* @keyframes colorfill {
+  0% { background-image: -moz-linear-gradient(top, transparent 25px,#9356DC 0px, #FF79DA 100%); }
+  5% { background-image: -moz-linear-gradient(top, transparent 23px,#9356DC 0px, #FF79DA 100%); }
+} */
+@-webkit-keyframes colorfill {
+  0% {
+    background-image: linear-gradient(to bottom, transparent 25px, #9356DC 0px, #FF79DA 100%);
+  }
+  5% {
+    background-image: linear-gradient(to bottom, transparent 23.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  10% {
+    background-image: linear-gradient(to bottom, transparent 22.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  15% {
+    background-image: linear-gradient(to bottom, transparent 21.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  20% {
+    background-image: linear-gradient(to bottom, transparent 20px, #9356DC 0px, #FF79DA 100%);
+  }
+  25% {
+    background-image: linear-gradient(to bottom, transparent 18.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  30% {
+    background-image: linear-gradient(to bottom, transparent 17.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  35% {
+    background-image: linear-gradient(to bottom, transparent 16.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  40% {
+    background-image: linear-gradient(to bottom, transparent 15px, #9356DC 0px, #FF79DA 100%);
+  }
+  45% {
+    background-image: linear-gradient(to bottom, transparent 13.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  50% {
+    background-image: linear-gradient(to bottom, transparent 12.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  55% {
+    background-image: linear-gradient(to bottom, transparent 11.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  60% {
+    background-image: linear-gradient(to bottom, transparent 10px, #9356DC 0px, #FF79DA 100%);
+  }
+  65% {
+    background-image: linear-gradient(to bottom, transparent 8.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  70% {
+    background-image: linear-gradient(to bottom, transparent 7.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  75% {
+    background-image: linear-gradient(to bottom, transparent 6.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  80% {
+    background-image: linear-gradient(to bottom, transparent 5px, #9356DC 0px, #FF79DA 100%);
+  }
+  85% {
+    background-image: linear-gradient(to bottom, transparent 3.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  90% {
+    background-image: linear-gradient(to bottom, transparent 2.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  95% {
+    background-image: linear-gradient(to bottom, transparent 1.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  100% {
+    background-image: linear-gradient(to bottom, transparent 0px, #9356DC 0px, #FF79DA 100%);
+  }
+}
+@keyframes colorfill {
+  0% {
+    background-image: linear-gradient(to bottom, transparent 25px, #9356DC 0px, #FF79DA 100%);
+  }
+  5% {
+    background-image: linear-gradient(to bottom, transparent 23.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  10% {
+    background-image: linear-gradient(to bottom, transparent 22.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  15% {
+    background-image: linear-gradient(to bottom, transparent 21.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  20% {
+    background-image: linear-gradient(to bottom, transparent 20px, #9356DC 0px, #FF79DA 100%);
+  }
+  25% {
+    background-image: linear-gradient(to bottom, transparent 18.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  30% {
+    background-image: linear-gradient(to bottom, transparent 17.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  35% {
+    background-image: linear-gradient(to bottom, transparent 16.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  40% {
+    background-image: linear-gradient(to bottom, transparent 15px, #9356DC 0px, #FF79DA 100%);
+  }
+  45% {
+    background-image: linear-gradient(to bottom, transparent 13.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  50% {
+    background-image: linear-gradient(to bottom, transparent 12.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  55% {
+    background-image: linear-gradient(to bottom, transparent 11.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  60% {
+    background-image: linear-gradient(to bottom, transparent 10px, #9356DC 0px, #FF79DA 100%);
+  }
+  65% {
+    background-image: linear-gradient(to bottom, transparent 8.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  70% {
+    background-image: linear-gradient(to bottom, transparent 7.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  75% {
+    background-image: linear-gradient(to bottom, transparent 6.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  80% {
+    background-image: linear-gradient(to bottom, transparent 5px, #9356DC 0px, #FF79DA 100%);
+  }
+  85% {
+    background-image: linear-gradient(to bottom, transparent 3.75px, #9356DC 0px, #FF79DA 100%);
+  }
+  90% {
+    background-image: linear-gradient(to bottom, transparent 2.5px, #9356DC 0px, #FF79DA 100%);
+  }
+  95% {
+    background-image: linear-gradient(to bottom, transparent 1.25px, #9356DC 0px, #FF79DA 100%);
+  }
+  100% {
+    background-image: linear-gradient(to bottom, transparent 0px, #9356DC 0px, #FF79DA 100%);
+  }
+}
+
+.heart:hover {
+  -webkit-animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+          animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+}
+
+@-webkit-keyframes pop {
+  50% {
+    -webkit-transform: scale(1.4) translateX(9px);
+            transform: scale(1.4) translateX(9px);
+  }
+}
+
+@keyframes pop {
+  50% {
+    -webkit-transform: scale(1.4) translateX(9px);
+            transform: scale(1.4) translateX(9px);
+  }
+}
+
+.btn {
+  border-radius: 5rem;
+  border: none;
+  padding: 0.9rem 0.75rem;
+  margin: 1rem 0rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 100%;
+}
+
+.btn-thin {
+  margin: 2.5rem auto;
+  width: 50%;
+  max-width: 300px;
+}
+
+.heart {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 2.5rem 0 0rem;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.main-heart {
+  position: absolute;
+  right: -0.50rem;
+  bottom: 1.75rem;
+}
+
+.heart:hover .default {
+  /* Pour réduire l'épaisseur des coeurs, impossible sans FontAwesome Pro */
+  display: none;
+}
+
+.heart:hover {
+  -webkit-text-stroke-width: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  -webkit-animation: pop 0.3s linear 1;
+  animation: pop 0.3s linear 1;
+}
+
+.heart-colored {
+  display: none;
+}
+
+.heart:hover .heart-colored {
+  display: inline;
+}
+
+.restaurant-heart {
+  position: relative;
+  height: 25px;
+  top: 20px;
+  text-align: right;
+  right: -10px;
+}
+
+.restaurant-heart:hover {
+  -webkit-animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+          animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+}
+
+.middle-grey-bg,
+.light-grey-bg,
+.dark-grey-bg {
+  display: block;
+  float: left;
+  width: 100vw;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.page_covering {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 1;
+}
+
+.self-made-loader {
+  height: 100%;
+  margin-left: -33px;
+  -webkit-transform: translate(-50%, -40vw);
+          transform: translate(-50%, -40vw);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.plate {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 25px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transform: rotate3d(1, 0, 0, -80deg);
+          transform: rotate3d(1, 0, 0, -80deg);
+  -webkit-box-shadow: 0px 50px 5px #151515;
+          box-shadow: 0px 50px 5px #151515;
+  border: 15px solid #323232;
+  outline: 5px solid white;
+}
+
+.inner_plate {
+  position: relative;
+  top: 10%;
+  left: 5px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  width: 110px;
+  height: 110px;
+  background-color: #5c5c5c;
+  border-radius: 50%;
+  border: 0px solid black;
+}
+
+.hamburger-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburger-style > * {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.fork {
+  color: #e4e4e4;
+  -webkit-text-stroke: 1px white;
+  width: 40px;
+  margin-top: 26px;
+  font-size: 70px;
+  -webkit-clip-path: inset(0px 100px 0 32px);
+          clip-path: inset(0px 100px 0 32px);
+  -webkit-transform: translateY(-5000px);
+          transform: translateY(-5000px);
+  -webkit-animation: dropdown 0.5s linear 1.25s 1 normal forwards, upndown 0.5s linear 2s infinite normal forwards;
+          animation: dropdown 0.5s linear 1.25s 1 normal forwards, upndown 0.5s linear 2s infinite normal forwards;
+  /* border: 1px solid white; */
+  /*   animation: name duration timing-function delay iteration-count direction fill-mode;
+   */
+  margin-right: 22px;
+  margin-top: 40px;
+}
+
+.knife {
+  width: 45px;
+  font-size: 70px;
+  margin-left: -28px;
+  margin-top: 26px;
+  -webkit-animation: upndown 0.5s infinite;
+          animation: upndown 0.5s infinite;
+  -webkit-clip-path: inset(0px 12px 0 100px);
+          clip-path: inset(0px 12px 0 100px);
+  -webkit-transform: translateY(-5000px);
+          transform: translateY(-5000px);
+  -webkit-animation: dropdown 0.5s linear 1.45s 1 normal forwards, upndown 0.5s linear 2s infinite normal forwards;
+          animation: dropdown 0.5s linear 1.45s 1 normal forwards, upndown 0.5s linear 2s infinite normal forwards;
+  /* border: 1px solid white; */
+  margin-left: -6px;
+  margin-top: 40px;
+}
+
+.burgers > * {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-transform: translateY(-5000px);
+          transform: translateY(-5000px);
+  /* border: 1px solid white; */
+}
+
+.burgers i:nth-of-type(1) {
+  -webkit-text-fill-color: #323232;
+  -webkit-clip-path: inset(72px 0 0px 0);
+          clip-path: inset(72px 0 0px 0);
+  -webkit-animation: dropdown 0.5s linear 0s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+          animation: dropdown 0.5s linear 0s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+}
+
+.burgers i:nth-of-type(2) {
+  -webkit-clip-path: inset(74px 5px 30px 5px);
+          clip-path: inset(74px 5px 30px 5px);
+  /* background-color: green; */
+  background-color: white;
+  -webkit-text-fill-color: #353535;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  border-radius: 50%;
+  margin-left: -125px;
+  -webkit-animation: dropdown 0.5s linear 0.5s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+          animation: dropdown 0.5s linear 0.5s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+}
+
+.burgers i:nth-of-type(3) {
+  -webkit-clip-path: inset(45px 0px 30px 0px);
+          clip-path: inset(45px 0px 30px 0px);
+  color: brown;
+  margin-left: -125px;
+  -webkit-animation: dropdown 0.5s linear 0.75s 1 normal forwards, upnsdown 0.5s linear 2.25s infinite normal forwards;
+          animation: dropdown 0.5s linear 0.75s 1 normal forwards, upnsdown 0.5s linear 2.25s infinite normal forwards;
+}
+
+.burgers i:nth-of-type(4) {
+  -webkit-clip-path: inset(46px 10px 51px 10px);
+          clip-path: inset(46px 10px 51px 10px);
+  /* background-color: red; */
+  background-color: white;
+  -webkit-text-fill-color: #323232;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  border-radius: 50%;
+  margin-left: -125px;
+  -webkit-animation: dropdown 0.5s linear 0.85s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+          animation: dropdown 0.5s linear 0.85s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+}
+
+.burgers i:nth-of-type(5) {
+  -webkit-clip-path: inset(0px 0px 50px 0px);
+          clip-path: inset(0px 0px 50px 0px);
+  margin-left: -125px;
+  -webkit-animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+          animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 2px 10px #e2e2e2;
+  box-shadow: 0 2px 10px #e2e2e2;
+  z-index: 3;
+}
+
+/* For testing purposes only */
+.middle {
+  position: absolute;
+  background-color: #008766;
+  top: 0;
+  margin: 0;
+  width: 0px;
+  height: 600vh;
+  border: 2px solid white;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: cyan;
+}
+
 /* Display */
-header,
-.header--arrow,
+.flex,
+html,
+body,
 .logo,
 .location,
 .description,
@@ -383,17 +1327,20 @@ header,
 .description p,
 .btn,
 .heart,
+.header--title,
 .fonctionnement,
 .card_description,
 .menu-item,
 .menu-item--text,
 .menu-item-price,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.flex-inline,
 .step {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -415,13 +1362,22 @@ header {
   flex-direction: row;
 }
 
+body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* Wrap/Nowrap */
+.flex-nowrap,
 header,
 .menu-item {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
 
+.flex-wrap,
 .description,
 .fonctionnement,
 .menu-item--text {
@@ -430,40 +1386,329 @@ header,
 }
 
 /* Justify / Align */
-.header--arrow {
+.flex-left {
   -webkit-box-pack: left;
   -ms-flex-pack: left;
   justify-content: left;
 }
 
+.flex-center,
+html,
+body,
 .logo,
 .location,
+.header--title,
 .description,
 .description h2,
 .description p,
 .btn,
 .fonctionnement,
 .step,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.header--arrow,
+.flex-align-center,
+body,
 .heart,
 .fonctionnement,
 .step,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
+.flex-align-end,
 .menu-item-price {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+}
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
+  z-index: 3;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav > * {
+  display: block;
+  line-height: 1.75rem;
+}
+
+nav a:nth-child(1) i {
+  padding: 0.25rem 0.50rem 0.25rem 0;
+}
+
+nav a:nth-child(2) i {
+  padding: 0.25rem 0.4rem 0.25rem 0;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header--title {
+  width: 100%;
+}
+
+.arrow--index {
+  display: none;
+}
+
+.header--arrow {
+  padding: 0 1rem;
+  position: absolute;
+  left: 0;
+}
+
+.logo {
+  max-width: 800px;
+  width: 100vw;
+  padding: 0rem;
+  z-index: 10;
+  margin: 1.35rem auto;
+}
+
+.logo,
+.location {
+  max-width: 800px;
+}
+
+.location {
+  padding: 1rem;
+  z-index: 0;
+  padding-top: calc(80px + 1rem);
+  margin: 0 auto;
+}
+
+.location i {
+  margin-right: 0.5rem;
+}
+
+.description {
+  padding: 1rem 3rem 3rem 3rem;
+  text-align: center;
+}
+
+.description h2 {
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.description p {
+  width: 100%;
+}
+
+.fonctionnement {
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fonctionnement h2 {
+  width: 100%;
+  text-align: left;
+}
+
+.item {
+  margin: 0.8rem 0.5rem;
+  margin-left: 0.5rem;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 5px #e2e2e2;
+  box-shadow: 0px 5px 5px #e2e2e2;
+}
+
+.item i {
+  margin-right: 1.1rem;
+}
+
+.step {
+  height: 25px;
+  width: calc(25px - 0.05rem);
+  border-radius: 50%;
+  margin-left: -0.9rem;
+  margin-right: 0.9rem;
+}
+
+#restaurants {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 1rem;
+  margin: 1rem 0;
+  height: 250px;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 5px #e2e2e2;
+  box-shadow: 0px 5px 5px #e2e2e2;
+}
+
+.card_img {
+  overflow: hidden;
+  height: 175px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+.card_img img {
+  width: 100%;
+}
+
+.card_text {
+  padding: 0 1rem;
+}
+
+.nouveau {
+  float: right;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.1rem;
+}
+
+.restaurant_name {
+  display: block;
+}
+
+.card_description {
+  height: calc(75px - 0rem);
+}
+
+.card_text {
+  width: 90%;
+  padding: 0.75rem 0.75rem;
+}
+
+.restaurant-page {
+  padding: 2rem 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.restaurant-img img {
+  position: relative;
+  top: 48px;
+  right: 0px;
+  width: 100vw;
+  height: 265px;
+  margin-bottom: 30px;
+  z-index: 1;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.restaurant-title {
+  width: 100%;
+}
+
+.menu-header {
+  position: relative;
+  top: -2rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 1rem 0.8rem 0 1.2rem;
+  z-index: 2;
+  margin-bottom: -2rem;
+}
+
+.menu-header-content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-text {
+  width: calc(100% - 1.2rem);
+  padding: 0.6rem 0.6rem 0 0.6rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  border-radius: 15px;
+  margin: 0.75rem 0;
+  overflow: hidden;
+  width: calc(100%);
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item--text {
+  padding: 1rem 0.5rem 1rem 1rem;
+  min-width: 0;
+}
+
+.menu-item:hover .menu-item--text {
+  max-width: calc(100% - 60px - 1.5rem);
+}
+
+.menu-item-title {
+  width: 100%;
+}
+
+.menu-item-description {
+  width: calc(100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-item-price {
+  width: calc(20%);
+  height: 100%;
+  float: left;
+  position: relative;
+  left: -110%;
+}
+
+.menu-item--check {
+  width: calc(70px - 1.5rem);
+  padding: 1rem 1rem 1rem 0;
+}
+
+hr {
+  border: none;
+  width: 10%;
+  height: 1px;
+  float: left;
+  margin-top: -10px;
+  margin-bottom: 0.75rem;
 }
 
 /* Couleurs :
@@ -477,11 +1722,13 @@ Tertiaire (vert) : #99E2D0
 /* background-colors */
 .white-bg,
 .card,
-.menu-item {
+.menu-item,
+header {
   background-color: white;
 }
 
 .bg-light-grey,
+.light-grey-bg,
 .item-default,
 #restaurants,
 .description,
@@ -505,7 +1752,8 @@ hr {
   background-color: #9356DC;
 }
 
-.location {
+.location,
+.middle-grey-bg {
   background-color: #eaeaea;
 }
 
@@ -513,7 +1761,9 @@ hr {
   background-color: #f5edff;
 }
 
-footer {
+.page_covering,
+footer,
+.dark-grey-bg {
   background-color: #353535;
 }
 
@@ -554,22 +1804,5 @@ footer *,
 
 .location, .description p {
   color: #353535;
-}
-
-/* ----- for testing purpose ---- */
-.green {
-  background-color: greenyellow;
-}
-
-.red {
-  background-color: red;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.blue {
-  background-color: cyan;
 }
 /*# sourceMappingURL=main.css.map */

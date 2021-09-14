@@ -1,3 +1,8 @@
+// -------------------------------------------- 
+// THEME
+// --------------------------------------------
+
+
 /* Couleurs :
 Primaire (violet) : #9356DC
 Secondaire (rose) : #FF79DA
@@ -13,11 +18,13 @@ Tertiaire (vert) : #99E2D0
 /* background-colors */
 .white-bg,
 .card,
-.menu-item {
+.menu-item,
+header {
     background-color: white;
 }
 
 .bg-light-grey,
+.light-grey-bg,
 .item-default,
 #restaurants,
 .description,
@@ -39,15 +46,18 @@ hr {
     background-color: $primaryColor;
 }
 
-.location {
+.location,
+.middle-grey-bg {
     background-color: #eaeaea;
 }
   
 .item-default:hover, .item-light {
     background-color: #f5edff;
 }
-  
-footer {
+
+.page_covering,
+footer,
+.dark-grey-bg {
     background-color: #353535;
 }
 
@@ -87,18 +97,4 @@ footer *,
   
 .location, .description p {
     color: #353535;
-}
-
-/* ----- for testing purpose ---- */
-.green {
-    background-color: greenyellow;
-}
-.red {
-    background-color: red;
-}
-.yellow {
-    background-color: yellow;
-}
-.blue {
-    background-color: cyan;
 }

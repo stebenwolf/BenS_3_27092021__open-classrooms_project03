@@ -1,7 +1,12 @@
+// -------------------------------------------- 
+// FLEX
+// --------------------------------------------
+
 /* Display */
 
-header,
-.header--arrow,
+.flex,
+html,
+body, 
 .logo,
 .location,
 .description,
@@ -9,17 +14,20 @@ header,
 .description p,
 .btn,
 .heart,
+.header--title,
 .fonctionnement,
 .card_description,
 .menu-item,
 .menu-item--text,
 .menu-item-price,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
+.flex-inline, 
 .step {  
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -42,15 +50,20 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
 }
+body {
+    flex-direction: column;
+}
 
 
 /* Wrap/Nowrap */
+.flex-nowrap,
 header,
 .menu-item {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
+.flex-wrap,
 .description,
 .fonctionnement,
 .menu-item--text {
@@ -61,36 +74,42 @@ header,
 
 /* Justify / Align */
 
-.header--arrow {
+.flex-left {
     -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
 }
+.flex-center,
+html,
+body,
 .logo,
 .location,
+.header--title,
 .description,
 .description h2,
 .description p,
 .btn,
 .fonctionnement,
 .step,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
-
-.header--arrow,
+.flex-align-center,
+body,
 .heart,
 .fonctionnement,
 .step,
-.menu-item--check {
+.menu-item--check,
+.self-made-loader {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
-
+.flex-align-end,
 .menu-item-price {
     -webkit-box-align: end;
     -ms-flex-align: end;

@@ -1,0 +1,72 @@
+// -------------------------------------------- 
+// BUTTONS
+// --------------------------------------------
+
+.btn {
+    border-radius: 5rem;
+    border: none;
+    padding: 0.9rem 0.75rem;
+    margin: 1rem 0rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 100%;
+  }
+  
+  .btn-thin {
+    margin: 2.5rem auto;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .heart {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0 2.5rem 0 0rem;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .main-heart {
+    position: absolute;
+    right: -0.50rem;
+    bottom: 1.75rem;
+  }
+  
+  .heart:hover .default {
+    /* Pour réduire l'épaisseur des coeurs, impossible sans FontAwesome Pro */
+    display: none;
+  }
+  
+  .heart:hover {
+    -webkit-text-stroke-width: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    -webkit-animation: pop 0.3s linear 1;
+            animation: pop 0.3s linear 1;
+  }
+  
+  
+  .heart-colored {
+    display: none;
+  }
+  
+  .heart:hover .heart-colored {
+    display: inline;
+  }
+  
+  .restaurant-heart {
+    position: relative;
+    height: 25px;
+    top: 20px;
+    text-align: right;
+    right: -10px;
+  }
+
+  .restaurant-heart:hover {
+    animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+  }

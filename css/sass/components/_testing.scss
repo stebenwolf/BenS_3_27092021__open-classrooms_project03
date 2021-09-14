@@ -1,0 +1,32 @@
+// -------------------------------------------- 
+// TESTING
+// --------------------------------------------
+
+/* For testing purposes only */
+
+
+.middle {
+    position:absolute;
+    background-color: #008766;
+    top: 0;
+    margin: 0;
+    width: 0px;
+    height: 600vh;
+    border: 2px solid white;
+    z-index: 20;
+    display: flex;
+    float: left;
+  }
+
+  .green {
+    background-color: greenyellow;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: cyan;
+}

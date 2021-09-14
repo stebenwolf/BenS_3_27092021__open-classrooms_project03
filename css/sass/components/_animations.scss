@@ -1,3 +1,7 @@
+// -------------------------------------------- 
+// ANIMATIONS
+// --------------------------------------------
+
 /* FADE-IN EFFECT */
 
 .menu-text,
@@ -11,12 +15,6 @@
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
-.btn-thin {
-    -webkit-animation-delay: 3.5s;
-            animation-delay: 3.5s;
-    -webkit-animation-duration: 1.8s;
-            animation-duration: 1.8s;
-} // A bit different for btn-thin
 
 // Animation delays
 .menu-text:nth-of-type(1) {
@@ -83,69 +81,32 @@
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s;
   }
-
-
-.heart-colored:active {
-    -webkit-animation: pop 0.3s linear 1;
-            animation: pop 0.3s linear 1;
-}
   
-@-webkit-keyframes pop {
-    50% {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-    }
-}
-  
-@keyframes pop {
-    50% {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-    }
-}
-
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 @-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 
 
-  .menu-item .menu-item-description {
+.menu-item .menu-item-description {
     -webkit-animation: ellipsisout 0.8s forwards;
             animation: ellipsisout 0.8s forwards;
-  }
+}
   
-  @-webkit-keyframes ellipsisout {
-    to {
-      width: calc(100%);
-    }
-    from {
-      width: calc(100% - 40px);
-    }
-  }
+@-webkit-keyframes ellipsisout {
+    from { width: calc(100% - 40px); }
+    to { width: calc(100%); }
+}
   
-  @keyframes ellipsisout {
-    to {
-      width: calc(100%);
-    }
-    from {
-      width: calc(100% - 40px);
-    }
-  }
-  
+@keyframes ellipsisout {
+    from { width: calc(100% - 40px); }
+    to { width: calc(100%); }
+}
 
 .menu-item:hover .menu-item-description {
     -webkit-animation: ellipsisin 0.8s forwards;
@@ -153,23 +114,14 @@
 }
   
 @-webkit-keyframes ellipsisin {
-    from {
-      width: calc(100%);
-    }
-    to {
-      width: calc(100% - 40px);
-    }
+    from { width: calc(100%); }
+    to { width: calc(100% - 40px); }
 }
   
 @keyframes ellipsisin {
-    from {
-      width: calc(100%);
-    }
-    to {
-      width: calc(100% - 40px);
-    }
+    from { width: calc(100%); }
+    to { width: calc(100% - 40px); }
 }
-
 
 .menu-item--check {
     animation: slide-out 0.4s forwards;
@@ -191,12 +143,8 @@
     }
 }
 @-webkit-keyframes slide-out {
-    0% {
-      -webkit-transform: translateX(0%);
-    }
-    100% {
-      -webkit-transform: translateX(100%);
-    }
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(100%); }
 }
   
   
@@ -218,8 +166,6 @@
     }
 }
   
-
-
 .menu-item:hover .menu-item--check {
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
@@ -237,4 +183,139 @@
     100% {
       -webkit-transform: translateX(0%);
     }
+}
+
+
+.page_covering {
+  animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+  /*transition: 15s; */
+}
+
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@-webkit-keyframes disappear {
+from { transform: scale(1); }
+to { transform: scale(0.000001); }
+}
+@keyframes disappear {
+from { transform: scale(1); }
+to { transform: scale(0.000001); }
+}
+
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-300px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-300px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+@-webkit-keyframes upndown {
+  0% { transform:translateY(0px);}
+  50% {transform: translateY(-15px);}
+  100% { transform:translateY(0px);}
+}
+@keyframes upndown {
+  0% { transform:translateY(0px);}
+  50% {transform: translateY(-35px);}
+  100% { transform:translateY(0px);}
+}
+
+@-webkit-keyframes dropdown {
+  0% {transform: translateY(-5000px);}
+  100% {transform: translateY(0);}
+}
+@keyframes dropdown {
+  0% {transform: translateY(-5000px);}
+  100% {transform: translateY(0);}
+}
+
+
+
+.btn, .btn-thin {
+  opacity: 1;
+  animation: shadows-away 0.2s ease-in 0s 1 normal forwards;
+}
+
+.btn:hover, .btn-thin:hover {
+  opacity: 1;
+  animation: shadows 0.2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes shadows {
+  to {filter: brightness(110%);
+    box-shadow: 0px 5px 5px #7e7e7e;}    
+}
+
+@keyframes shadows-away {
+  from {
+    filter: brightness(110%);
+    box-shadow: 0px 5px 5px #7e7e7e;
+  }
+  to {filter: brightness(100%);
+  box-shadow: none;}
+  
+}
+
+/* @keyframes colorfill {
+  0% { background-image: -moz-linear-gradient(top, transparent 25px,#9356DC 0px, #FF79DA 100%); }
+  5% { background-image: -moz-linear-gradient(top, transparent 23px,#9356DC 0px, #FF79DA 100%); }
+} */
+@keyframes colorfill {
+  0% { @include gradient-bg(0) }
+  5% { @include gradient-bg(5) }
+  10% { @include gradient-bg(10) }
+  15% { @include gradient-bg(15) }
+  20% { @include gradient-bg(20) }
+  25% { @include gradient-bg(25) }
+  30% { @include gradient-bg(30) }
+  35% { @include gradient-bg(35) }
+  40% { @include gradient-bg(40) }
+  45% { @include gradient-bg(45) }
+  50% { @include gradient-bg(50) }
+  55% { @include gradient-bg(55) }
+  60% { @include gradient-bg(60) }
+  65% { @include gradient-bg(65) }
+  70% { @include gradient-bg(70) }
+  75% { @include gradient-bg(75) }
+  80% { @include gradient-bg(80) }
+  85% { @include gradient-bg(85) }
+  90% { @include gradient-bg(90) }
+  95% { @include gradient-bg(95) }
+  100% { @include gradient-bg(100) }
+}
+
+
+  
+.heart:hover {
+  animation: colorfill 0.5s ease-in 0s 1 forwards, pop 0.15s linear 0.5s 2;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.4) translateX(9px);}
 }
