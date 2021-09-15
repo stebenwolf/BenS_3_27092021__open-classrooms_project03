@@ -5,30 +5,14 @@
 /* Display */
 
 .flex,
-html,
-body, 
-.logo,
-.location,
-.description,
-.description h2,
-.description p,
 .btn,
-.heart,
-.header--title,
-.fonctionnement,
-.card_description,
-.menu-item,
-.menu-item--text,
-.menu-item-price,
-.menu-item--check,
-.self-made-loader {
+.heart {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.flex-inline, 
-.step {  
+.flex-inline {  
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -80,8 +64,6 @@ header,
           justify-content: left;
 }
 .flex-center,
-html,
-body,
 .logo,
 .location,
 .header--title,
