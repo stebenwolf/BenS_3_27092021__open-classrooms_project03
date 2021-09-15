@@ -24,6 +24,12 @@
   }
   
   .self-made-loader {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100%;
     margin-left: -33px;
     transform: translate(-50%, -40vw);

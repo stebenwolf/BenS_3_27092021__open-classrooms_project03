@@ -3,10 +3,18 @@
 // --------------------------------------------
 
 .btn {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: 5rem;
     border: none;
     padding: 0.9rem 0.75rem;
     margin: 1rem 0rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
     width: 100%;
@@ -19,10 +27,17 @@
   }
 
   .heart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     padding: 0 2.5rem 0 0rem;
+    font-weight: 100;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #fff;
   }

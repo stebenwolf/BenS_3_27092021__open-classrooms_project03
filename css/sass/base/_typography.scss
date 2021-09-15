@@ -60,9 +60,6 @@ nav > *,
 
 
 /* FONT WEIGHT */
-.heart {
-    font-weight: 100;
-}
 .menu-title,
 .restaurant_location,
 .description p {
@@ -70,9 +67,6 @@ nav > *,
 }
 .step {
     font-weight: 400;
-}
-.btn {
-    font-weight: 500;
 }
 .location,
 .item,
@@ -82,12 +76,7 @@ nav > *,
 .restaurant_name,
 .menu-item-title,
 .menu-item-price {
-    font-weight: bold;
-}
-
-/* LETTER SPACING */
-.btn {
-    letter-spacing: 0.01rem;
+    font-weight: 700;
 }
 
 /* TEXT TRANSFORM */

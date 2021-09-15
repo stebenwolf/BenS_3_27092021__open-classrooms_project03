@@ -4,9 +4,7 @@
 
 /* Display */
 
-.flex,
-.btn,
-.heart {
+.flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,29 +26,24 @@
 
 
 /* Direction */
-header {
+.flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
 }
-body {
+.flex-column {
     flex-direction: column;
 }
 
 
 /* Wrap/Nowrap */
-.flex-nowrap,
-header,
-.menu-item {
+.flex-nowrap {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
-.flex-wrap,
-.description,
-.fonctionnement,
-.menu-item--text {
+.flex-wrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
@@ -63,30 +56,14 @@ header,
       -ms-flex-pack: left;
           justify-content: left;
 }
-.flex-center,
-.logo,
-.location,
-.header--title,
-.description,
-.description h2,
-.description p,
-.btn,
-.fonctionnement,
-.step,
-.menu-item--check,
-.self-made-loader {
+.flex-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
 .flex-align-center,
-body,
-.heart,
-.fonctionnement,
-.step,
-.menu-item--check,
-.self-made-loader {
+.menu-item--check {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
