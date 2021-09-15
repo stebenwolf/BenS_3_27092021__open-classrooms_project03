@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr" class="flex flex-center scrollbar-hidden">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood! Restaurant "La Palette du Goût"</title>
+
+    <!-- <link rel="stylesheet" href = "./css/normalize.css"> -->
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
+
+    <!-- <link rel="stylesheet" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="./desktop.css" />  -->
+    <link rel="stylesheet" media="screen" href="./css/sass/main.css" />
+
+    <!-- Bonus, une icone qui manquait pour le site -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon-32x32.png"> -->
+</head>
+
+<body class="flex flex-center flex-align-center flex-column">
+
+    <header class="flex flex-nowrap flex-row white-bg shadow">
+        <a href="index.html">
+            <h1 class="flex flex-center logo">
+                <span class="flex header--arrow ">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                <span class="flex flex-center title header--title">
+                    ohmyfood
+                </span>
+            </h1>
+        </a>        
+    </header>
+
+    <main class="restaurant-page bg-light-grey">
+        <div class="restaurant-img">
+            <picture>
+                <img src="./requirements/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant à la Française">
+            </picture>
+        </div>
+        <div class="menu-header">
+            <div class="menu-header-content">
+                <div class="restaurant-title">
+                    <h1 class="title">La palette du goût</h1>
+                </div>
+                <div class="heart restaurant-heart">
+                    <i class="default far fa-heart"></i>
+                    <i class="heart-colored fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-grey-bg">
+        <section class="menu-text">
+            <h3 class="menu-title">Entrées</h3>
+            <hr>
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Fricassée d'escargot</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Au piment d'Espelette</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">25&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Foie gras de canard mi-cuit</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Et ses copeaux de truffe noire</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">35&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Oeuf au plat</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Assaisonné à la truffe sur lit de caviar</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">20&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-text">
+            <h3 class="menu-title">Plats</h3>
+            <hr>
+
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Filet de boeuf aux herbes</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Accompagné de sa ribambelle de légumes</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">40&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Parmentier de queue de boeuf</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">À la truffe noire sur sa purée de panais</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">35&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Filet de turbot</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Aux agrumes</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">44&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-text">
+            <h3 class="menu-title">Desserts</h3>
+            <hr>
+
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Paris-Brest</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Revisité</span>    
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">18&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+                
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Macaron au chocolat d'exception</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Et glace à la vanille de Madagascar</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">22&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="flex flex-nowrap menu-item shadow">
+                <div class="flex flex-wrap menu-item--text">
+                    <div class="menu-item-title">Mousse au chocolat</div>
+                    <div class="menu-item-description">
+                        <span class="menu-item-subtitle">Au piment d'Espelette et à la truffe noire</span>
+                    </div>
+                </div>
+                <div class="flex flex-center menu-item--check">
+                    <span class="flex menu-item-price">23&euro;</span>
+                    <div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#checkout">
+            <span class="btn btn-thin">Commander</span>
+        </a>
+    </div>
+    </main>
+
+    <div class="dark-grey-bg">
+        <footer>
+            <span class="title">ohmyfood</span>
+            <nav>
+                <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+                <a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+                
+                <a href="#">Mentions légales</a>
+                <a href="mailto:hello@ohmyfood.com">Contact</a>
+            </nav>
+        </footer>
+    </div>
+    
+</body>
+</html>

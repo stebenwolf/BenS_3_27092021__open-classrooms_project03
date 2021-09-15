@@ -1,0 +1,29 @@
+// -------------------------------------------- 
+// FOOTER
+// --------------------------------------------
+
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
+  z-index: 3;
+}
+
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav > * {
+    display: block;
+    line-height: 1.75rem;
+  }
+  
+  nav a:nth-child(1) i {
+    padding: 0.25rem 0.50rem 0.25rem 0;
+  }
+  
+  nav a:nth-child(2) i {
+    padding: 0.25rem 0.4rem 0.25rem 0;
+  }

@@ -1,0 +1,7 @@
+// -------------------------------------------- 
+// MIXINS
+// --------------------------------------------
+
+@mixin gradient-bg($percentage) {
+    background-image: linear-gradient(to bottom, transparent gradual($percentage),#9356DC 0px, #FF79DA 100%);
+}

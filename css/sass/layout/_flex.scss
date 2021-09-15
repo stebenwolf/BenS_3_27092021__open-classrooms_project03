@@ -1,0 +1,76 @@
+// -------------------------------------------- 
+// FLEX
+// --------------------------------------------
+
+/* Display */
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-inline {  
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+
+/* Grow/Shrink/... */ 
+.menu-item--text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+
+/* Direction */
+.flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+
+/* Wrap/Nowrap */
+.flex-nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Justify / Align */
+
+.flex-left {
+    -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.flex-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-align-center,
+.menu-item--check {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flex-align-end,
+.menu-item-price {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
