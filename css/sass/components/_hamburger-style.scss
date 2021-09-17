@@ -138,7 +138,42 @@
     animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
   }
 
-
+@media (max-width: 420px) {
+  @supports (-webkit-appearance: none) {
+    .self-made-loader {
+      transform: scale(1);
+      height: 100%;
+      width: 100%;
+      
+    }
+    .plate {
+      position: absolute;
+      margin: 0 auto;
+      top: 44vh;
+      left: 38vw;
+    }
+    .hamburger-style {
+      margin: 0;
+      position: absolute;
+      top: 41%;
+      left: -11px;
+      right: -37.5px;
+      
+    }
+    .burgers i:nth-of-type(1) {
+      clip-path: none;
+      position: relative;
+      margin: 0 auto;
+      animation: dropdown 0.5s linear 0s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards; 
+    }
+    .burgers i:nth-of-type(3) {
+      display: none;
+    }
+    .burgers i:nth-of-type(5) {
+      display: none;
+    }
+  } 
+}
 
   @supports (-moz-appearance:none) {
     .hamburger-style {margin-left: 0px;}
