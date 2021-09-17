@@ -44,11 +44,11 @@
     width: 120px;
     height: 120px;
     background-color: transparent;
-    border-radius: 50%;
     transform: rotate3d(1,0,0,-80deg);
     box-shadow: 0px 50px 5px #151515;
+    
+    border-radius: 50%;
     border: 15px solid #323232;
-    outline: 5px solid white;
   }
   
   .inner_plate {
@@ -66,6 +66,7 @@
   
   .hamburger-style {
     display: flex;
+    margin-left: 130px;
   }
   
   .hamburger-style > * {
@@ -81,18 +82,15 @@
     -webkit-text-stroke: 1px white;
     width: 40px;
     margin-top: 26px;
-    
+    z-index: 15;
     font-size: 70px;
-    clip-path: inset(0px 100px 0 32px);
     transform: translateY(-5000px);
     animation: dropdown 0.5s linear 1.25s 1 normal forwards, upndown 0.5s linear 2s infinite normal forwards;
-    /* border: 1px solid white; */
-  /*   animation: name duration timing-function delay iteration-count direction fill-mode;
-   */
-     margin-right: 22px;
-     margin-top: 40px;
+    margin-right: 22px;
+    margin-top: 40px;
+    margin-left: 80px;
   }
-  
+
    .knife {
     width:45px;
     font-size: 70px;
@@ -105,6 +103,7 @@
     /* border: 1px solid white; */
     margin-left: -6px;
     margin-top: 40px;
+    z-index: 12;
   }
   
   .burgers > *{
@@ -113,47 +112,70 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     transform: translateY(-5000px);
-    
-    /* border: 1px solid white; */
   }
   
   .burgers i:nth-of-type(1) {
+    position: relative;
+    left: 38px;
     -webkit-text-fill-color: #323232;
     clip-path: inset(72px 0 0px 0);
     animation: dropdown 0.5s linear 0s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
   }
   
-  .burgers i:nth-of-type(2) {
-    clip-path: inset(74px 5px 30px 5px);
-    /* background-color: green; */
-    background-color: white;
-    -webkit-text-fill-color: #353535; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    border-radius: 50%;
-    margin-left: -125px;
-    animation: dropdown 0.5s linear 0.5s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
-  }
+  
   .burgers i:nth-of-type(3) {
-    clip-path: inset(45px 0px 30px 0px);
+    position: relative;
+    margin-left: -212px;
+    clip-path: inset(45px -1px 30px -1px);
     color: brown;
-    margin-left: -125px;
     animation: dropdown 0.5s linear 0.75s 1 normal forwards, upnsdown 0.5s linear 2.25s infinite normal forwards;
   }
-  .burgers i:nth-of-type(4) {
-    clip-path: inset(46px 10px 51px 10px);
-    /* background-color: red; */
-    background-color: white;
-    -webkit-text-fill-color: #323232; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    border-radius: 50%;
-    margin-left: -125px;
-    animation: dropdown 0.5s linear 0.85s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
   
-  }
   .burgers i:nth-of-type(5) {
-    clip-path: inset(0px 0px 50px 0px);
-    margin-left: -125px;
+    position: relative;
+    left: -250px;
+    clip-path: inset(0px 0px 55px 0px);
     animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
   }
+
+
+
+  @supports (-moz-appearance:none) {
+    .hamburger-style {margin-left: 0px;}
+    .fork { clip-path: inset(0px 100px 0 32px); 
+    margin-left: 0;
+  margin-right: 22px;} 
+    .plate { outline: 5px solid white; }
+    .burgers i:nth-of-type(1) {
+      left: 0px;
+    }
+    .burgers i:nth-of-type(2) {
+      clip-path: inset(74px 5px 30px 5px);
+      background-color: white;
+      -webkit-text-fill-color: #353535; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      border-radius: 50%;
+      margin-left: -125px;
+      animation: dropdown 0.5s linear 0.5s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+    }
+    .burgers i:nth-of-type(3) {
+      margin-left: -125px;
+    }
+    .burgers i:nth-of-type(4) {
+      clip-path: inset(46px 10px 51px 10px);
+      /* background-color: red; */
+      background-color: white;
+      -webkit-text-fill-color: #323232; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      border-radius: 50%;
+      margin-left: -125px;
+      animation: dropdown 0.5s linear 0.85s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
+    
+    }
+    .burgers i:nth-of-type(5) {
+      left: 0px;
+      margin-left: -125px;
+    }
+}

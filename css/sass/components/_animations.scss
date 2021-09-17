@@ -187,7 +187,7 @@
 
 
 .page_covering {
-  animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+  animation: faadeout 0.45s linear 3s 1 normal forwards, disappears 0.1s linear 4s 1 normal forwards;
   /*transition: 15s; */
 }
 
@@ -236,23 +236,49 @@ to { transform: scale(0.000001); }
 
 
 @-webkit-keyframes upndown {
-  0% { transform:translateY(0px);}
-  50% {transform: translateY(-15px);}
-  100% { transform:translateY(0px);}
+  0% { 
+    -webkit-transform: translateY(0px);
+    transform:translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% { 
+    -webkit-transform: translateY(0px);
+    transform:translateY(0px);}
 }
 @keyframes upndown {
-  0% { transform:translateY(0px);}
-  50% {transform: translateY(-35px);}
-  100% { transform:translateY(0px);}
+  0% { 
+    -webkit-transform: translateY(0px);
+    transform:translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% { 
+    -webkit-transform: translateY(0px);
+    transform:translateY(0px);}
 }
 
 @-webkit-keyframes dropdown {
-  0% {transform: translateY(-5000px);}
-  100% {transform: translateY(0);}
+  0% {
+    -webkit-transform: translateY(-5000px);
+    transform: translateY(-5000px);}
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 @keyframes dropdown {
-  0% {transform: translateY(-5000px);}
-  100% {transform: translateY(0);}
+  0% {
+    -webkit-transform: translateY(-5000px);
+    transform: translateY(-5000px);}
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 
