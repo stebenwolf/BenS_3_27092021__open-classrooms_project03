@@ -660,8 +660,8 @@ nav > *,
 }
 
 .page_covering {
-  -webkit-animation: faadeout 0.45s linear 3s 1 normal forwards, disappears 0.1s linear 4s 1 normal forwards;
-          animation: faadeout 0.45s linear 3s 1 normal forwards, disappears 0.1s linear 4s 1 normal forwards;
+  -webkit-animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
+          animation: fadeout 0.45s linear 3s 1 normal forwards, disappear 0.1s linear 4s 1 normal forwards;
   /*transition: 15s; */
 }
 
