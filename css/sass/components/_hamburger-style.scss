@@ -138,7 +138,7 @@
     animation: dropdown 0.5s linear 0.9s 1 normal forwards, upndsown 0.5s linear 2.25s infinite normal forwards;
   }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   @supports (-webkit-appearance: none) {
     .self-made-loader {
       transform: scale(1);
@@ -173,7 +173,7 @@
       display: none;
     }
   } 
-}
+} */
 
   @supports (-moz-appearance:none) {
     .hamburger-style {margin-left: 0px;}
