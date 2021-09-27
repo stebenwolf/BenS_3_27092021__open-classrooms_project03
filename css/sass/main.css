@@ -1833,4 +1833,26 @@ footer *,
 .location, .description p {
   color: #353535;
 }
+
+.menu-title {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.underlined {
+  position: relative;
+  margin: 3px;
+  margin-bottom: 15px;
+}
+
+.underlined:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: #99E2D0;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
